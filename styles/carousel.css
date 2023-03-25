@@ -1,0 +1,74 @@
+.carousel{
+    width: 100vw;
+    position: relative;
+    margin: 5% 0px;
+    background-color: #343434;
+    height: 25vh;
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
+    color: var(--text);
+}
+
+.carousel-slide{
+    color: var(--text);
+    display: none;
+    position: absolute;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-text{
+    text-overflow: ellipsis;
+}
+
+.carousel-btn-container{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+}
+
+.carousel-btn{
+    color: var(--text);
+    padding: 3px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+}
+
+.carousel-btn:hover{
+    color: lightgray;
+}
+
+.reveal{
+    display: block;
+    animation: reveal 1200ms linear 0s 1 normal forwards;
+}
+
+@keyframes reveal{
+    0%{
+        left: 60%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        left: 50%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 766px){
+    .carousel{
+        font-size: 0.8rem;
+    }
+    }
+    @media screen and (min-width: 767px) and (max-width: 1023px){
+        /*Code*/
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1439px){
+        /*Code*/
+    }

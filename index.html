@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Document details-->
+    <title>Jake Leicht</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta name="author" content="Jake Leicht">
+
+    <!--Stylesheets (CSS)-->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/preloader.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/jpeg" href="./images/favicon.jpeg" sizes="260x260">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body id="body" class="preload">
+    <div id="wrapper" class="wrapper">
+        <div id="outer" class="loader">
+            <div>
+                <div id="inner"></div>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="navbar-container">
+        <ul class="navbar-container-list">
+            <li>
+                <button id="resume-icon" class="navbar-item hidden">
+                    <a href="./files/JAKE_RESUME.pdf">
+                        <span>Jake</span>
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <span id="nav-home" class="navbar-item hidden toTop">Home</span>
+                <span id="nav-skills" class="navbar-item hidden">Skills</span>
+                <span id="nav-portfolio" class="navbar-item hidden">Portfolio</span>
+                <span id="nav-contact" class="navbar-item hidden">Contact</span>
+            </li>
+        </ul>
+    </div>
+    <section id="home-section" class="section">
+        <img id="home-background-img" src="./images/homeBackground.jpg" alt="">
+        <h1 class="home-title">Welcome, I am <span class="highlight">Jake "JaKob" Leicht</span></h1>
+        <h2 class="home-subtitle">Frontend Web Developer</h2>
+        <button id="home-btn" class="section-btn">View Content<i class="fa-solid fa-arrow-down"></i></button>
+    </section>
+    <section id="oblivion-section" class="section">
+        <svg id="svg" viewBox="0 0 1440 690" class="transition duration-300 ease-in-out delay-150">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                    <stop offset="5%" stop-color="#c24315"></stop>
+                    <stop offset="95%" stop-color="#c24315"></stop>
+                </linearGradient>
+            </defs>
+            <path d="M 0,700 C 0,700 0,175 0,175 C 61.0974358974359,171.3153846153846 122.1948717948718,167.6307692307692 208,162 C 293.8051282051282,156.3692307692308 404.31794871794875,148.7923076923077 503,171 C 601.6820512820512,193.2076923076923 688.5333333333333,245.2 762,237 C 835.4666666666667,228.8 895.5487179487179,160.40769230769234 960,132 C 1024.451282051282,103.59230769230767 1093.271794871795,115.16923076923075 1174,129 C 1254.728205128205,142.83076923076925 1347.3641025641025,158.91538461538462 1440,175 C 1440,175 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 350)"></path>
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#c24315"></stop><stop offset="95%" stop-color="#c24315"></stop>
+                </linearGradient>
+            </defs>
+            <path d="M 0,700 C 0,700 0,350 0,350 C 65.1846153846154,317.9384615384615 130.3692307692308,285.87692307692305 209,292 C 287.6307692307692,298.12307692307695 379.70769230769224,342.4307692307692 477,348 C 574.2923076923078,353.5692307692308 676.8000000000001,320.40000000000003 764,310 C 851.1999999999999,299.59999999999997 923.0923076923075,311.9692307692308 995,320 C 1066.9076923076925,328.0307692307692 1138.8307692307694,331.72307692307686 1213,336 C 1287.1692307692306,340.27692307692314 1363.5846153846153,345.13846153846157 1440,350 C 1440,350 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 350)"></path>
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                    <stop offset="5%" stop-color="#c24315"></stop>
+                    <stop offset="95%" stop-color="#c24315"></stop>
+                </linearGradient>
+            </defs>
+            <path d="M 0,700 C 0,700 0,525 0,525 C 59.68717948717949,512.5282051282052 119.37435897435898,500.05641025641023 213,517 C 306.625641025641,533.9435897435898 434.18974358974356,580.3025641025641 511,564 C 587.8102564102564,547.6974358974359 613.8666666666667,468.7333333333333 688,460 C 762.1333333333333,451.2666666666667 884.3435897435897,512.7641025641026 969,521 C 1053.6564102564103,529.2358974358974 1100.7589743589742,484.21025641025636 1173,476 C 1245.2410256410258,467.78974358974364 1342.6205128205129,496.39487179487185 1440,525 C 1440,525 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 350)"></path>
+        </svg>
+    </section>
+    <section id="skills-section" class="section-reveal section">
+        <div class="skills-content">
+            <span class="skills-content-section">
+                <div class="skills-list">
+                    <div class="skills-item skills-primary">
+                        <div>
+                            <i class="fa-brands fa-html5"></i>
+                            <p>HTML</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p>CSS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <p>Bootstrap</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-less"></i>
+                            <p>LESS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-sass"></i>
+                            <p>SASS/SCSS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-js"></i>
+                            <p>JavaScript (ES6+)</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <iconify-icon icon="mdi:jquery"></iconify-icon>
+                            <p>jQuery</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-react"></i>
+                            <p>React.JS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                    </div>
+                    <div class="skills-item skills-secondary">
+                        <div>
+                            <i class="fa-brands fa-html5"></i>
+                            <p>HTML</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p>CSS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <p>Bootstrap</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-less"></i>
+                            <p>LESS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-sass"></i>
+                            <p>SASS/SCSS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-js"></i>
+                            <p>JavaScript (ES6+)</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <iconify-icon icon="mdi:jquery"></iconify-icon>
+                            <p>jQuery</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-react"></i>
+                            <p>React.JS</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <h1 class="skill-tool-text"></h1>
+            <span class="skills-content-section">
+                <div class="tools-list">
+                    <div class="tools-item tools-primary">
+                        <div>
+                            <iconify-icon icon="mdi:vs-code"></iconify-icon>
+                            <p>VS Code</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-square-git"></i>
+                            <p>Git</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                            <p>GitHub</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <iconify-icon icon="logos:notion-icon"></iconify-icon>
+                            <p>Notion</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <iconify-icon icon="simple-icons:obsidian"></iconify-icon>
+                            <p>Obsidian</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                    </div>
+                    <div class="tools-item tools-secondary">
+                        <div>
+                            <iconify-icon icon="mdi:vs-code"></iconify-icon>
+                            <p>VS Code</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-square-git"></i>
+                            <p>Git</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                            <p>GitHub</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <iconify-icon icon="logos:notion-icon"></iconify-icon>
+                            <p>Notion</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                        <div>
+                            <iconify-icon icon="simple-icons:obsidian"></iconify-icon>
+                            <p>Obsidian</p>
+                            <span class="skill-item-base"></span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </section>
+    <div id="carousel-container" class="section-reveal carousel">
+        <div class="carousel-slide">
+            <blockquote class="slide-text" cite="Robert C. Martin, Clean Code">"Every time you see duplication in the code, it represents a missed opportunity for abstraction. That duplication could probably become a subroutine or perhaps another class outright." <br><em>-Robert C. Martin, Clean Code</em></blockquote>
+        </div>
+        <div class="carousel-slide">
+            <blockquote class="slide-text" cite="David Thomas & Andrew Hunt, The Pragmatic Programmer">"...we need to get back to thinking of programs as being something that transforms inputs into outputs. When we do, many of the details we previously worried about just evaporate." <br><em>-David Thomas & Andrew Hunt, The Pragmatic Programmer</em></blockquote>
+        </div>
+        <div class="carousel-slide">
+            <blockquote class="slide-text" cite="Robert C. Martin, Clean Code">"Functions should do one thing. They should do it well. They should do it only." <br><em>-Robert C. Martin, Clean Code</em></blockquote>
+        </div>
+        <div class="carousel-slide">
+            <blockquote class="slide-text" cite="Jared Bhatti et. al., Docs for Developers">"You may only criticize an idea if you add a constructive suggestion" <br><em>-Jared Bhatti et. al., Docs for Developers</em></blockquote>
+        </div>
+        <div class="carousel-btn-container">
+            <button title="prev slide" id="prev-slide-btn" class="carousel-btn prev-slide-btn">
+                <iconify-icon icon="material-symbols:arrow-back-ios-new-rounded"></iconify-icon>
+            </button>
+            <button title="next slide" id="next-slide-btn" class="carousel-btn next-slide-btn">
+                <iconify-icon icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+            </button>
+        </div>
+    </div>
+    <section id="project-section" class="section-reveal section">
+        <ul class="project-list">
+            <li class="project-item project-reveal">
+                <span class="project-img-span">
+                    <img src="./images/squabble.jpeg" alt="Squabble Clone">
+                </span>
+                <span class="project-content-span">
+                    <p class="project-item-title">Squabble Clone</p>
+                    <ul class="madeWith-list">
+                        <li class="madeWith-item">HTML</li>
+                        <li class="madeWith-item">CSS Styling</li>
+                        <li class="madeWith-item">JavaScript</li>
+                        <li class="madeWith-item">jQuery</li>
+                    </ul>
+                    <span class="btn-container">
+                        <a href="https://jake-leicht.github.io/Squabble-Clone//" target="_blank" rel="noopener">
+                            <button class="project-btn">View Live</button>
+                        </a>
+                        <a href="https://github.com/Jake-Leicht/Squabble-Clone" target="_blank" rel="noopener">
+                            <button class="project-btn">View Code</button>
+                        </a>
+                    </span>
+                </span>
+            </li>
+            <li class="project-item project-reveal">
+                <span class="project-img-span">
+                    <img src="./images/websiteV1.jpeg" alt="Portfolio Website V1">
+                </span>
+                <span class="project-content-span">
+                    <p class="project-item-title">Portfolio V1</p>
+                    <ul class="madeWith-list">
+                        <li class="madeWith-item">HTML</li>
+                        <li class="madeWith-item">CSS Styling</li>
+                        <li class="madeWith-item">JavaScript</li>
+                        <li class="madeWith-item">jQuery</li>
+                    </ul>
+                    <span class="btn-container">
+                        <a href="https://jake-leicht.github.io/" target="_blank" rel="noopener">
+                            <button class="project-btn">View Live</button>
+                        </a>
+                        <a href="https://github.com/Jake-Leicht/Jake-Leicht.github.io" target="_blank" rel="noopener">
+                            <button class="project-btn">View Code</button>
+                        </a>
+                    </span>
+                </span>
+            </li>
+            <li class="project-item project-reveal">
+                <span class="project-img-span">
+                    <img src="./images/budgetExpense.jpeg" alt="React Expense App">
+                </span>
+                <span class="project-content-span">
+                    <p class="project-item-title">React Budget/Expense App</p>
+                    <ul class="madeWith-list">
+                        <li class="madeWith-item">React.JS</li>
+                        <li class="madeWith-item">Gatsby</li>
+                        <li class="madeWith-item">SCSS Styling</li>
+                        <li class="madeWith-item">Victory Pie</li>
+                    </ul>
+                    <span class="btn-container">
+                        <a href="https://jake-leicht.github.io/gatsby-budget-app/" target="_blank" rel="noopener">
+                            <button class="project-btn">View Live</button>
+                        </a>
+                        <a href="https://github.com/Jake-Leicht/gatsby-budget-app" target="_blank" rel="noopener">
+                            <button class="project-btn">View Code</button>
+                        </a>
+                    </span>
+                </span>
+            </li>
+            <li class="project-item project-reveal">
+                <span class="project-img-span">
+                    <img src="./images/us-states-api.jpeg" alt="US States Distance API">
+                </span>
+                <span class="project-content-span">
+                    <p class="project-item-title">US States Distance API</p>
+                    <ul class="madeWith-list">
+                        <li class="madeWith-item">HTML</li>
+                        <li class="madeWith-item">CSS Styling</li>
+                        <li class="madeWith-item">JavaScript</li>
+                        <li class="madeWith-item">REST API</li>
+                    </ul>
+                    <span class="btn-container">
+                        <a href="https://jake-leicht.github.io/US-states-API/" target="_blank" rel="noopener">
+                            <button class="project-btn">View Live</button>
+                        </a>
+                        <a href="https://github.com/Jake-Leicht/US-states-API" target="_blank" rel="noopener">
+                            <button class="project-btn">View Code</button>
+                        </a>
+                    </span>
+                </span>
+            </li>
+            <li class="project-item project-reveal">
+                <span class="project-img-span">
+                    <img src="./images/bookSelectionApp.jpeg" alt="Book Selection App">
+                </span>
+                <span class="project-content-span">
+                    <p class="project-item-title">Book Selection App</p>
+                    <ul class="madeWith-list">
+                        <li class="madeWith-item">React.JS</li>
+                        <li class="madeWith-item">Google Firebase</li>
+                        <li class="madeWith-item">CSS Styling</li>
+                    </ul>
+                    <span class="btn-container">
+                        <!-- <a href="#" target="_blank" rel="noopener">
+                            <button class="project-btn">View Live</button>
+                        </a> -->
+                        <a href="https://github.com/Jake-Leicht/book-selection-app" target="_blank" rel="noopener">
+                            <button class="project-btn">View Code</button>
+                        </a>
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </section>
+    <section id="contact-section" class="section-reveal section">
+        <!--todo: reorganize contact section-->
+        <div class="contact-content">
+            <span>
+                <h2>Get in Touch!</h2>
+                <button class="gen-btn email-btn">
+                    <p>Contact</p>
+                    <iconify-icon icon="mdi:email"></iconify-icon></button>
+            </span>
+        </div>
+        <button id="back-to-top-btn" class="gen-btn toTop-btn" title="To Top">
+            <iconify-icon icon="material-symbols:keyboard-double-arrow-up"></iconify-icon>
+        </button>
+    </section>
+    <footer class="section-reveal footer">
+        <ul class="footer-social-list">
+            <li class="footer-social-list-item">
+                <a href="https://www.instagram.com/jake_leicht/">
+                    <iconify-icon icon="mdi:instagram"></iconify-icon>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a href="https://www.linkedin.com/in/jake-leicht/">
+                    <iconify-icon icon="mdi:linkedin"></iconify-icon>
+                </a>
+            </li>
+            <li class="footer-social-list-item">
+                <a href="https://github.com/Jake-Leicht">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="footer-nav">
+            <!-- todo: set scrollTo behaviour for elems-->
+            <li id="footer-item-home" class="footer-nav-item toTop">Home</li>
+            <li id="footer-item-skills" class="footer-nav-item">Skills</li>
+            <li id="footer-item-portfolio" class="footer-nav-item">Portfolio</li>
+            <li id="footer-item-contact" class="footer-nav-item">Contact</li>
+        </ul>
+        <p>Website created by Jake Leicht</p>
+    </footer>
+</body>
+<!--jQuery Code-->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<!--Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/f06ad63a54.js" crossorigin="anonymous"></script>
+<!--Iconify-->
+<script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+<!--React and ReactDOM-->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<!--LESS Style Sheet-->
+<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+
+<script type="module">
+    $(document).ready(function(){
+        console.log("loaded");
+        document.getElementById("wrapper").style.display = "none";
+    });
+</script>
+<script type="module" src="./scripts/index.js"></script>
+<script type="module" src="./scripts/navbar.js"></script>
+<script src="./scripts/carousel.js"></script>
+<script src="./scripts/projects.js"></script>
+<!--
+    console.log()
+    ? Summary
+    ! Error
+    & Possible Solution
+    ^ params/function explanation
+    * Notes
+    ~ Purple
+    todo Feature to add/edit-->
+</html>

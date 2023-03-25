@@ -1,0 +1,131 @@
+#project-section{
+    color: var(--text);
+    height: 200vh;
+}
+
+.project-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 4%;
+}
+
+.project-item{
+    position: relative;
+    display: flex;
+    margin-left: 20%;
+    margin-top: 4%;
+    width: 60vw;
+    height: 25vh;
+    border: 10px solid #343434;
+    border-radius: 12px;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.project-reveal{
+    transform: translateX(50px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.project-reveal.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.project-item:hover{
+    background-color: #343434;
+}
+
+.project-content-span{
+    width: 100%;
+    padding: 2%;
+    border-radius: 12px;
+}
+
+.project-img-span{
+    background-color: #343434;
+    width: 40%;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.project-img-span img{
+    width: clamp(150px, 100%, 300px);
+    height: 100%;
+    border-radius: 12px;
+}
+
+.project-item-title{
+    font-size: 1.8rem;
+}
+
+.madeWith-list{
+    list-style: none;
+    margin: 2% 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    font-size: 1.2rem;
+}
+
+.madeWith-item{
+    white-space: nowrap;
+}
+
+.btn-container{
+    display: flex;
+    gap: 2%;
+}
+
+.project-btn{
+    background-color: #343434;
+    border: none;
+    border-radius: 12px;
+    color: var(--text);
+    font-size: 1.4rem;
+    padding: 6px;
+}
+
+.project-btn:hover{
+    background-color: whitesmoke;
+    color: #232323;
+    border: 2px solid #232323;
+}
+
+@media screen and (max-width: 766px){
+    .project-item{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .project-item-title, .madeWith-item{
+        display: none;
+    }
+
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-container button{
+        white-space: nowrap;
+        font-size: 1.0rem;
+    }
+
+    .project-content-span{
+        margin-left: 20%;
+        width: 40%;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    /*Code*/
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    /*Code*/
+}

@@ -1,0 +1,29 @@
+/* ? Footer CSS */
+.footer{
+    height: 18vh;
+    color: darkgray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.footer-social-list-item a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 1.6rem;
+}
+
+.footer ul li:hover, .footer ul li:hover a{
+    color: lightgray;
+}

@@ -1,0 +1,210 @@
+.skills-title, .tools-title{
+    z-index: 1;
+    color: var(--text);
+    opacity: 0.2;
+    font-size: 3.0rem;
+    margin-left: 5%;
+    width: 100vw;
+}
+
+.skills-content{
+    z-index: 2;
+    font-size: 1.4rem;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-content-section{
+    position: relative;
+    width: 100vw;
+    height: 20rem;
+    overflow-x: hidden;
+}
+
+.skill-tool-text{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.revealTitle{
+  opacity: 1;
+  transition: opacity 500ms;
+  transition-delay: 200ms;
+}
+
+.skills-list, .tools-list {
+    position: relative;
+    width: 100vw;
+    height: 20rem;
+    overflow: hidden;
+  }
+  
+  .skills-item, .tools-item {
+    color: whitesmoke;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    font-weight: 600;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+  }
+  
+  .tools-item{
+      font-size: 1.8rem;
+  }
+  
+  .skills-item i, .skills-item iconify-icon{
+      font-size: 5.0rem;
+  }
+  
+  .tools-item iconify-icon, .tools-item i{
+      font-size: 3.6rem;
+  }
+  
+  .skills-item div, .tools-item div{
+    position: relative;
+  }
+  
+  .skill-item-base{
+    position: absolute;
+    bottom: -60px;
+    left: -25%;
+    border-radius: 50%;
+    border: 8px solid var(--text);
+    width: 150%;
+    height: 100%;
+    color: white;
+    transform: rotateX(72deg) rotateZ(0deg);
+    filter: drop-shadow(0 0 10px var(--text));
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .skills-item div:hover .skill-item-base{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 200ms;
+  }
+
+  .tools-item div:hover .skill-item-base{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .skills-primary, .skills-secondary, .tools-primary, .tools-secondary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .skills-primary{
+    animation: skill-primary var(--animation-speed) linear infinite;
+  }
+
+  .tools-primary{
+    animation: tool-primary var(--faster-animation-speed) linear infinite;
+  }
+  
+  .paused{
+    animation-play-state: paused !important;
+  }
+  
+  .skills-secondary {
+    animation: skill-secondary var(--animation-speed) linear infinite;
+  }
+
+  .tools-secondary{
+    animation: tool-secondary var(--faster-animation-speed) linear infinite;
+  }
+  
+  @keyframes skill-primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes skill-secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+
+  @keyframes tool-primary{
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+
+  @keyframes tool-secondary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+@media screen and (max-width: 766px){
+  #skills-section{
+    height: 130vh;
+  }
+
+.skills-content{
+  height: 100%;
+}
+
+.skills-content-section{
+  overflow: visible;
+}
+
+.skills-content-section:nth-child(3){
+  margin-top: 70%;
+}
+
+.skills-list, .tools-list{
+  overflow: visible;
+}
+
+.skills-item, .tools-item{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.skills-primary, .tools-secondary{
+  animation-play-state: paused;
+}
+
+.skills-secondary, .tools-primary{
+  display: none;
+}
+
+.skill-tool-text{
+  display: none;
+}
+
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    /*Code*/
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    /*Code*/
+}

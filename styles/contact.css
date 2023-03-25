@@ -1,0 +1,118 @@
+/* ? Contact Section CSS*/
+#contact-section{
+    color: var(--text);
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding-top: 15%;
+    text-align: center;
+}
+
+.contact-content{
+    background-color: var(--background);
+    border: 2px solid var(--text);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0px auto;
+    height: 40vh;
+}
+
+.contact-content span{
+    width: 300%;
+    text-align: center;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content span *:not(h2){
+    justify-content: space-around;
+}
+
+.gen-btn{
+    text-align: center;
+    border: 2px solid var(--text);
+    border-radius: 12px;
+    color: var(--text);
+    background-color: transparent;
+    width: 50%;
+    height: 10%;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
+
+.email-btn{
+    margin-top: 20%;
+    height: 18%;
+    width: clamp(134px, 50%, 250px);
+}
+
+@keyframes emailAnimation{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes emailAnimationReverse{
+    0%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.email-btn:hover p, .email-btn:hover iconify-icon{
+    animation: emailAnimation 600ms linear 0s 1 normal forwards;
+}
+
+.email-btn p, .email-btn iconify-icon{
+    animation: emailAnimationReverse 600ms linear 0s 1 normal forwards;
+}
+
+.toTop-btn{
+    margin-top: 6%;
+    font-size: 2.4rem;
+    width: clamp(100px, 50%, 100px);
+}
+
+.toTop-btn:hover iconify-icon{
+    animation: toTop 1000ms linear 0s infinite normal forwards;
+}
+
+@keyframes toTop{
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(-6px);
+    }
+    66%{
+        transform: translateY(6px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 766px){
+    #contact-section{
+        height: 60vh;
+        clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    #back-to-top-btn{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    /*Code*/
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    /*Code*/
+}

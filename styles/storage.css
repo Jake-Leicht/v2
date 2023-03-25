@@ -1,0 +1,50 @@
+#home-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home-btn:hover{
+    background-color: rgba(194, 67, 21, 0.5);
+}
+
+/* * animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
+#home-btn:hover i{
+    display: block;
+    /* animation: adjustText 800ms linear 0s 1 normal forwards,
+    arrowFadeIn 1s linear 500ms 1 normal forwards, 
+    downArrow 1s linear 1s infinite normal forwards; */
+}
+
+@keyframes adjustText{
+    0%{
+        margin-right: 0%;
+    }
+    100%{
+        margin-right: 10%;
+    }
+}
+
+@keyframes downArrow{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+
+    25%{
+        transform: translateY(-6px);
+    }
+
+    75%{
+        transform: translateY(6px);
+    }
+}
+
+@keyframes arrowFadeIn{
+    0%{
+        opacity: 0;
+        display: show;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}

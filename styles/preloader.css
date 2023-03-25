@@ -1,0 +1,57 @@
+:root{
+    --spin-duration: 3500ms;
+    --spin-iteration: 3;
+    --spin-complete: calc(3500 * 3);
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    background-color: #000;
+    border: 2px solid red;
+}
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* ! overwritten by animation*/
+    /* transform: translate(-50%, -50%); */
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.loader div{
+    height: 100%;
+    width: 100%;
+}
+
+.loader, .loader div{
+    border: 8px solid var(--secondary);
+    border-top: 8px solid transparent;
+    border-radius: 50%;
+    padding: 12px;
+    animation: spin var(--spin-duration) normal 0s var(--spin-iteration) linear forwards,
+    complete 100ms normal 10.5s 1 linear forwards;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes complete{
+    0%{}
+    100%{
+        border: 8px solid lightgreen;
+        border-top: 8px solid transparent;
+    }
+}
+
+.fade{
+    opacity: 0;
+    visibility: hidden;
+}
