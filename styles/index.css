@@ -68,7 +68,7 @@ body{
 #oblivion-section{
     background: var(--background);
     color: white;
-    height: 80vh;
+    height: 85vh;
 }
 
 #oblivion-section::before{
@@ -85,12 +85,12 @@ body{
     position: absolute;
     top: 0;
     left: -550px;
-    animation: 30s library ease infinite;
+    animation: 26s library ease infinite;
 }
 
 @keyframes library{
     0%, 100%{
-        left: -550px;
+        left: -420px;
     }
     50%{
         left: 0px;
