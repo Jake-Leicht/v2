@@ -18,7 +18,6 @@ $(document).ready(function(){
     const backToTopBtn = document.getElementById("back-to-top-btn");
     backToTopBtn.addEventListener("click", () => windowScrollTo(sectionElems[0]));
 
-    // ! should preloader be inside document ready??
     // * Preloader
     const fade = () => {
         const wrapper = document.querySelector(".wrapper");
@@ -26,7 +25,14 @@ $(document).ready(function(){
     }
     window.addEventListener("load", function(){
         fade;
+        let timeout = window.setTimeout(loadPage, 7000);
     });
+
+    function loadPage(){
+        document.getElementById("wrapper").style.display = "none";
+        let body = $("#body");
+        body.removeClass("locked");
+    }
 
     // * Nav fade in/out
     window.addEventListener("scroll", function(){
@@ -104,7 +110,6 @@ $(document).ready(function(){
     }
 
     // * Skills infinite scroll pause/go
-    
     let skill = $(".skills-item div");
     let tool = $(".tools-item div");
     let titleTxt = $(".skill-tool-text");
@@ -116,7 +121,6 @@ $(document).ready(function(){
     skill.hover(function(){
         skillPrimary.addClass("paused");
         skillSecondary.addClass("paused");
-        // todo: pass in skill level to be displayed
         skillTitleReveal("Skills and Knowledge");
     }, function(){
         skillPrimary.removeClass("paused");

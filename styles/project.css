@@ -95,7 +95,7 @@
     border: 2px solid #232323;
 }
 
-@media screen and (max-width: 766px){
+@media screen and (max-width: 499px){
     .project-item{
         width: 90%;
         margin-left: 5%;
@@ -123,8 +123,41 @@
         width: 40%;
     }
 }
+@media screen and (min-width: 500px) and (max-width: 766px){
+    .project-content-span{
+        width: 50%;
+        margin-left: 10%;;
+    }
+
+    .project-item-title{
+        font-size: 1.0rem;
+    }
+
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-container button{
+        white-space: nowrap;
+        font-size: 1.0rem;
+    }
+
+    .madeWith-item{
+        font-size: 0.9rem;
+    }
+
+    .project-item{
+        height: 28vh;
+    }
+}
 @media screen and (min-width: 767px) and (max-width: 1023px){
-    /*Code*/
+    .project-content-span{
+        width: 70%;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px){
     /*Code*/

@@ -44,8 +44,8 @@
 }
 
 .email-btn{
-    margin-top: 20%;
-    height: 18%;
+    margin-top: 4vh;
+    height: 14%;
     width: clamp(134px, 50%, 250px);
 }
 
@@ -111,7 +111,16 @@
     }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px){
-    /*Code*/
+    #contact-section{
+        height: 80vh;
+        clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+}
+
+@media screen and (min-width: 900px){
+    /* .email-btn{
+        height: 10%;
+    } */
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px){
     /*Code*/

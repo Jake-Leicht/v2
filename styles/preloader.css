@@ -1,7 +1,11 @@
 :root{
     --spin-duration: 3500ms;
-    --spin-iteration: 3;
-    --spin-complete: calc(3500 * 3);
+    --spin-iteration: 2;
+    --spin-complete: calc(3500 * 2);
+}
+
+.locked{
+    overflow: hidden;
 }
 
 .wrapper{
@@ -9,15 +13,12 @@
     height: 100vh;
     inset: 0;
     background-color: #000;
-    border: 2px solid red;
 }
 
 .loader{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    /* ! overwritten by animation*/
-    /* transform: translate(-50%, -50%); */
+    inset: 0;
+    margin: auto;
     width: 180px;
     height: 180px;
     overflow: hidden;
@@ -34,7 +35,7 @@
     border-radius: 50%;
     padding: 12px;
     animation: spin var(--spin-duration) normal 0s var(--spin-iteration) linear forwards,
-    complete 100ms normal 10.5s 1 linear forwards;
+    complete 100ms normal 7000ms 1 linear forwards;
 }
 
 @keyframes spin {

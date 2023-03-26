@@ -68,7 +68,7 @@ body{
 #oblivion-section{
     background: var(--background);
     color: white;
-    height: 100vh;
+    height: 80vh;
 }
 
 #oblivion-section::before{
@@ -126,7 +126,6 @@ body{
     color: var(--text);
     border: 2px solid var(--secondary);
     border-radius: 12px;
-    /* margin: 12% auto; */
     font-size: 1.4rem;
     padding: 10px;
     font-family: inherit;
@@ -186,7 +185,9 @@ body{
     }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px){
-    /*Code*/
+    #oblivion-section{
+        height: 40vh;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px){
     /*Code*/
