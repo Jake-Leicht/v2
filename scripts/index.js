@@ -3,6 +3,22 @@ import { windowScrollTo, sectionElems } from "./navbar.js";
 const img = document.getElementById("home-background-img");
 const navbar = $("#header").hide();
 
+// * Preloader
+const fade = () => {
+    const wrapper = document.querySelector(".wrapper");
+    wrapper.classList.add("fade");
+}
+window.addEventListener("load", function(){
+    fade;
+    this.window.setTimeout(loadPage, 7000);
+});
+
+function loadPage(){
+    document.getElementById("wrapper").style.display = "none";
+    let body = $("#body");
+    body.removeClass("locked");
+}
+
 $(document).ready(function(){
     // * Scroll to top on load/refresh
     window.onbeforeunload = function(){
@@ -17,22 +33,6 @@ $(document).ready(function(){
     // * Back to Top
     const backToTopBtn = document.getElementById("back-to-top-btn");
     backToTopBtn.addEventListener("click", () => windowScrollTo(sectionElems[0]));
-
-    // * Preloader
-    const fade = () => {
-        const wrapper = document.querySelector(".wrapper");
-        wrapper.classList.add("fade");
-    }
-    window.addEventListener("load", function(){
-        fade;
-        let timeout = window.setTimeout(loadPage, 7000);
-    });
-
-    function loadPage(){
-        document.getElementById("wrapper").style.display = "none";
-        let body = $("#body");
-        body.removeClass("locked");
-    }
 
     // * Nav fade in/out
     window.addEventListener("scroll", function(){
@@ -76,28 +76,13 @@ $(document).ready(function(){
 
     // * Section scrollIntoView
     let pageSections = document.querySelectorAll(".section-reveal");
-    let projects = document.querySelectorAll(".project-item");
 
     window.addEventListener("scroll", () => {
         revealSection();
-        revealProject();
     });
 
     function revealSection(){
         pageSections.forEach((elem) => {
-            let winHeight = window.innerHeight;
-            let elemTop = elem.getBoundingClientRect().top;
-            let elemVisible = winHeight * 0.1;
-            if(elemTop < winHeight - elemVisible){
-                elem.classList.add("active");
-            } else{
-                elem.classList.remove("active");
-            }
-        });
-    }
-
-    function revealProject(){
-        projects.forEach((elem) => {
             let winHeight = window.innerHeight;
             let elemTop = elem.getBoundingClientRect().top;
             let elemVisible = winHeight * 0.1;

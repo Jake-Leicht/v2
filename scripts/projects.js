@@ -1,12 +1,18 @@
-const projects = document.querySelectorAll(".project-item");
-const projectSection = document.getElementById("project-section");
+let projects = document.querySelectorAll(".project-item");
 
-// console.log(projectSection.offsetTop);
-// console.log(`screen: ${window.screen.availHeight}`);
-// console.log(projectSection.offsetTop - window.screen.availHeight);
+window.addEventListener("scroll", () => {
+    revealProject();
+});
 
-// window.addEventListener("scroll", function(){
-
-// });
-
-// todo: fade in a section, then elems as needed
+function revealProject(){
+    projects.forEach((elem) => {
+        let winHeight = window.innerHeight;
+        let elemTop = elem.getBoundingClientRect().top;
+        let elemVisible = winHeight * 0.1;
+        if(elemTop < winHeight - elemVisible){
+            elem.classList.add("active");
+        } else{
+            elem.classList.remove("active");
+        }
+    });
+}

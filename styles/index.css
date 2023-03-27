@@ -23,12 +23,6 @@ body{
     background-size: 400% 400%;
 }
 
-/* todo: Get preload to work*/
-.preload *{
-    transition: all 0s;
-    animation: all 0s;
-}
-
 .section-reveal{
     opacity: 0;
     transition: 2s all ease;

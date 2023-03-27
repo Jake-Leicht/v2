@@ -11,12 +11,6 @@ const observer = new IntersectionObserver((items) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((elem) => observer.observe(elem));
 
-// let resumeIcon = document.getElementById("resume-icon");
-// resumeIcon.addEventListener("mouseover", function(){
-//     resumeIcon.target.classList.add("hidden");
-// });
-
-// offset | position
 export const sectionElems = document.querySelectorAll(".section");
 const navBtn = document.querySelectorAll(".navbar-item");
 
