@@ -10,7 +10,7 @@ const fade = () => {
 }
 window.addEventListener("load", function(){
     fade;
-    this.window.setTimeout(loadPage, 7000);
+    this.window.setTimeout(loadPage, 3500);
 });
 
 function loadPage(){

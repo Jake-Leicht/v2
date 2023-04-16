@@ -1,7 +1,7 @@
 :root{
     --spin-duration: 3500ms;
-    --spin-iteration: 2;
-    --spin-complete: calc(3500 * 2);
+    --spin-iteration: 1;
+    --spin-complete: calc(3500 * 1);
 }
 
 .locked{
@@ -35,7 +35,7 @@
     border-radius: 50%;
     padding: 12px;
     animation: spin var(--spin-duration) normal 0s var(--spin-iteration) linear forwards,
-    complete 100ms normal 7000ms 1 linear forwards;
+    complete 100ms normal 3500ms 1 linear forwards;
 }
 
 @keyframes spin {
